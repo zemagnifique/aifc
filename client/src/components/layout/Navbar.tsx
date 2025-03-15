@@ -17,7 +17,7 @@ export default function Navbar() {
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="cursor-pointer flex items-center">
                 <img
-                  src="/src/assets/AIFC_y.png"
+                  src="/assets/AIFC_y.png"
                   alt="AIFC.tv"
                   className="h-8"
                 />
