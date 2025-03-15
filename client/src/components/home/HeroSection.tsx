@@ -8,7 +8,7 @@ export default function HeroSection() {
   });
 
   return (
-    <div className="hero-gradient py-16 sm:py-24 bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url('assets/background.png')] bg-cover bg-center">
+    <div className="hero-gradient py-16 sm:py-24 bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url('https://aifc.tv/assets/background.png')] bg-cover bg-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           {isLoading ? (
