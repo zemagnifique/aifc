@@ -49,6 +49,24 @@ export default function Footer() {
               <Youtube size={20} />
             </a>
             <a
+              href="https://www.tiktok.com/@aifctv"
+              target="_blank"
+              className="text-gray-400 hover:text-white"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+              </svg>
+            </a>
+            <a
               href="https://www.twitch.tv/aifctv"
               target="_blank"
               className="text-gray-400 hover:text-white"
@@ -57,7 +75,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-white font-medium text-lg mb-4">Navigation</h3>
             <ul className="space-y-2">
@@ -198,7 +216,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
         <div className="border-t border-gray-800 pt-8">
           <p className="text-gray-400 text-center text-sm">
             © {new Date().getFullYear()} AIFC.tv - AI Fighting Championship.

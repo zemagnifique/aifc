@@ -2,9 +2,9 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
+import { staticApi } from "@/staticApi";
 import { useToast } from "@/hooks/use-toast";
-import { Facebook, Twitter, Youtube, TwitchIcon } from "lucide-react";
+import { Facebook, Twitter, Youtube, TwitchIcon, Instagram } from "lucide-react";
 
 const subscribeSchema = z.object({
   email: z.string().email("Please enter a valid email address"),
@@ -92,18 +92,27 @@ export default function AboutSection() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="bg-red-600 text-white px-6 py-3 rounded font-medium hover:bg-red-700 transition-colors flex items-center">
+              <a href="https://www.youtube.com/@aifctv" target="_blank" className="bg-red-600 text-white px-6 py-3 rounded font-medium hover:bg-red-700 transition-colors flex items-center">
                 <Youtube className="mr-2" size={20} /> SUBSCRIBE
-              </button>
-              <button className="bg-blue-600 text-white px-6 py-3 rounded font-medium hover:bg-blue-700 transition-colors flex items-center">
+              </a>
+              <a href="https://x.com/aifc_tv" target="_blank" className="bg-blue-600 text-white px-6 py-3 rounded font-medium hover:bg-blue-700 transition-colors flex items-center">
                 <Twitter className="mr-2" size={20} /> FOLLOW
-              </button>
-              <button className="bg-purple-600 text-white px-6 py-3 rounded font-medium hover:bg-purple-700 transition-colors flex items-center">
+              </a>
+              <a href="https://www.instagram.com/aifc.tv/" target="_blank" className="bg-rose-600 text-white px-6 py-3 rounded font-medium hover:bg-rose-700 transition-colors flex items-center">
+                <Instagram className="mr-2" size={20} /> FOLLOW
+              </a>
+              <a href="https://www.tiktok.com/@aifc.tv" target="_blank" className="bg-black text-white px-6 py-3 rounded font-medium hover:bg-gray-900 transition-colors flex items-center">
+                <svg className="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                </svg>
+                FOLLOW
+              </a>
+              <a href="https://www.twitch.tv/aifctv" target="_blank" className="bg-purple-600 text-white px-6 py-3 rounded font-medium hover:bg-purple-700 transition-colors flex items-center">
                 <TwitchIcon className="mr-2" size={20} /> WATCH LIVE
-              </button>
+              </a>
             </div>
           </div>
-          <div className="lg:w-1/2">
+          {/* <div className="lg:w-1/2">
             <div className="bg-[#171717] p-6 rounded-lg shadow-lg">
               <h3 className="font-anton text-2xl text-white mb-4">
                 JOIN THE AIFC COMMUNITY
@@ -177,7 +186,7 @@ export default function AboutSection() {
                 </button>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

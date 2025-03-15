@@ -23,7 +23,7 @@ export default function Navbar() {
                 />
               </Link>
             </div>
-            <div className="hidden md:ml-6 md:flex md:space-x-8">
+            {/* <div className="hidden md:ml-6 md:flex md:space-x-8">
               <Link
                 href="/"
                 className="text-white hover:text-primary px-3 py-2 font-medium"
@@ -60,12 +60,15 @@ export default function Navbar() {
               >
                 SUPPORT & ADS
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="flex items-center">
-            <button className="bg-primary text-black px-4 py-2 rounded font-bold hover:brightness-90 transition-colors">
+            <a
+              href="https://www.youtube.com/@aifctv"
+              className="bg-primary text-black px-4 py-2 rounded font-bold hover:brightness-90 transition-colors"
+            >
               WATCH LIVE
-            </button>
+            </a>
             <div className="md:hidden ml-4">
               <button
                 type="button"

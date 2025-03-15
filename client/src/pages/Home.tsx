@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      <FeaturedFights />
+      {/* <FeaturedFights />
       <LatestVideos />
       <EventsCalendar />
-      <ResultsSection />
+      <ResultsSection /> */}
       <AboutSection />
     </div>
   );
